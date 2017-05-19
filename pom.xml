@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.athento.nuxeo</groupId>
     <artifactId>athento-nx-extended-config</artifactId>
-    <version>2.1-SNAPSHOT</version>
+    <version>3.0</version>
     <name>Athento NX Extended Config</name>
     <description>Athento NX Extended Config</description>
 
@@ -15,7 +15,7 @@
                 <artifactId>nuxeo-distribution</artifactId>
                 <scope>import</scope>
                 <type>pom</type>
-                <version>6.0-HF20</version>
+                <version>8.10</version>
             </dependency>
         </dependencies>
 
@@ -114,7 +114,7 @@
     </build>
 
     <properties>
-        <nuxeo.platform.version>6.0</nuxeo.platform.version>
+        <nuxeo.platform.version>8.10</nuxeo.platform.version>
     </properties>
 
     <repositories>
@@ -144,7 +144,6 @@
     </repositories>
 
     <pluginRepositories>
-
         <pluginRepository>
             <id>public</id>
             <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
@@ -156,7 +155,18 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
-
+	<pluginRepository>
+            <id>athento-public</id>
+            <name>Athento Releases</name>
+            <url>http://maven2.yerbabuena.es/artifactory/athento-public</url>
+            <layout>default</layout>
+            <snapshots>
+                 <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                 <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
     </pluginRepositories>
 
     <distributionManagement>
