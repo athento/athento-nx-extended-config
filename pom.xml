@@ -157,6 +157,19 @@
             </snapshots>
         </pluginRepository>
 
+	<pluginRepository>
+            <id>athento-public</id>
+            <name>Athento Releases</name>
+            <url>http://maven2.yerbabuena.es/artifactory/athento-public</url>
+            <layout>default</layout>
+            <snapshots>
+                 <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                 <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+
     </pluginRepositories>
 
     <distributionManagement>
